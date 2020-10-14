@@ -1,3 +1,26 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0%;
+}
+ 
+.wrapper > * {
+  padding: 10px;
+  margin: 0;
+}
+ 
+.page-main {
+  flex-grow: 1;
+}
+
+.page-main span{
+  height: 100vh;
+  width: max-content;
+  display: flex;
+  position: static;
+  background-color: red;
+}
 
   h1,h2 {
     font-weight: 200;
@@ -9,18 +32,9 @@
     font-size: 2em;
   }
 
-  mat-toolbar {
-    height: 90px;
-    position: fixed;
-    z-index: 100;
-    margin: 0;
-    width: 100%  !important;
-    background-color: white;
-  }
-
-  .logo{
-    max-width: 10% !important;
-    margin-right: 17% !important;
+  .vertical-align {
+    display: flex;
+    flex-direction: column;
   }
 
   .img-fluid {
@@ -28,163 +42,9 @@
     margin-right: 0px !important;
   }
   
-  .flex {
-    display: flex;
-  }
   
-  .example-spacer {
-    flex: 1 1 auto;
-  }
-
   body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
+    overflow: hidden;
   }
-
-  .fwh-small-slide {
-    height: 30vh;
-    background : transparent;
-    box-sizing: border-box;
-    padding: 15px;
-  }
-
-  .fwh-slide{
-    height: 100vh;
-    background : transparent;
-    box-sizing: border-box;
-    padding: 15px;
-  }
-
-  .fwh-slide-first{
-      padding-top: 10%;
-      background-image: url('../assets/building-bg.jpg');
-      background-size: auto;
-      opacity: 0.5;
-  }
-
-  .fwh-slide--bg-blue{
-    background: blue;
-    color: white;
-  }
-
-  button {
-    color: orange;
-    font-weight: bold;
-  }
-
- .fwh-slide  p {
-    margin : 0;
-  }
-
-  .test-align{
-    display: flex;
-    align-items: initial;
-  }
-
-  img{
-    animation: fondu 4s;
-  }
-
-  @keyframes fondu{
-    0%{
-      opacity: 0;
-    }
-
-    100%{
-      opacity: 1;
-    }
-  }
-
-  /* SLIDER NOS CLIENTS */
-  
-@-webkit-keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
-}
-
-@keyframes scroll {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(calc(-250px * 7));
-            transform: translateX(calc(-250px * 7));
-  }
-}
-.slider {
-  background: pr;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 100px;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-}
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  -webkit-transform: rotateZ(180deg);
-          transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 40s linear infinite;
-          animation: scroll 40s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  height: 100px;
-  width: 250px;
-}
-
-/* TYPING EFFECTS */
-h3 {
-  animation: type 3s steps(22);
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 4px solid black;
-  width: 26ch;
-}
-
-p {
-  animation: type2 4s;
-}
-
-@keyframes type{
-  0%{
-    width: 0ch;
-  }
-
-  100%{
-    width: 26ch;
-  }
-}
-
-@keyframes type2{
-  0%{
-    margin-left: -20%;
-  }
-
-  100%{
-    margin-left: 0%;
-  }
-}

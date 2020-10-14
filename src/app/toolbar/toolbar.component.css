@@ -1,0 +1,25 @@
+
+  mat-toolbar {
+    height: 90px;
+    position: fixed;
+    z-index: 100;
+    margin: 0;
+    width: 100%  !important;
+    background-color: white;
+  }
+
+  .logo{
+    max-width: 10% !important;
+    margin-right: 17% !important;
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+
+  button {
+    color: orange;
+    font-weight: bold;
+  }
+

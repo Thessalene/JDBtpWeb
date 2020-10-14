@@ -1,150 +1,21 @@
 <title>Home Page JD BTP</title>
 
-
 <body>
-    <mat-toolbar color="primary">
-        <img class="logo" src={{imagePath}}>
-        <span class="example-spacer"></span>
-        <span>Qui sommes nous ?</span>
-        <span class="example-spacer"></span>
-        <span>Nos prestations</span>
-        <span class="example-spacer"></span>
-        <span>Nos réalisations</span>
-        <span class="example-spacer"></span>
-        <span>Contacts</span>
-        <span class="example-spacer"></span>
-        <button mat-raised-button>Demande de devis</button>
-        <span class="example-spacer"></span>
-      </mat-toolbar>
-    
-
-  <section class="fwh-slide fwh-slide-first">
-
-    <div class="test-align" style="margin-right: 0%; width: 100%;">
-      <div style="margin-right: 0%;">
-        <h3> Construire. Rénover. Innover.</h3>
-        <p>
-          Faîtes nous confiance dans la réalisation de vos villas, studios, immeubles ou encore dans la rénovation de vos bâtisses...      </p>  
-      </div>
-
-      <img style="width: auto; height: 220px;" src="../assets/logo_jdbtp_001.png" alt="Test"/>
-
-    </div>
    
-  </section>
 
-  <section class="fwh-slide fwh-slide--bg-blue">
-
-    <h2> Réalisation de tous vos projets </h2>
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
-      </p>
-
-      
-  </section>
-
-  <section class="fwh-small-slide">
-    <h1>Nos clients</h1>
-
-    <div class="slider">
-      <div class="slide-track">
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100" width="250" alt="" />
-        </div>
-        <div class="slide">
-          <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100" width="250" alt="" />
-        </div>
-      </div>
-    </div>
-</section>
-
-
-<section class="fwh-slide fwh-slide--bg-blue">
-
-  <h2> Réalisation de tous vos projets </h2>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-      when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.
-    </p>
-
-    
-</section>
-
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
-  <script type="text/javascript">
-    var app = angular.module('typewrite',[]);
-
-app.controller("typingController", function($scope, $interval){
-  window.scope = $scope
-  $scope.view ={};
-  $scope.word ={};
-  $scope.word.skill = ['Express','Node','Angular','React'];
-  
-  var idx=0;
-  var n=0;
-  var up = true;
-
-  $interval(function(){
-    var word = $scope.word.skill[idx];
-    var ln = word.length;
-
-    if(up){
-      $scope.view.type = word.slice(0,n);
-      n++
-    };
-    if(n===ln+1){up=false};
-    if(!up){
-      $scope.view.type = word.slice(0,n);
-      n--
-    }
-    if(n===0){
-      up=true
-      idx++
-    }
-    if(idx===$scope.word.skill.length){idx=0}
-    
-  }, 200);
-
-})
-  </script>
-
+  <div class="wrapper">
+    <header class="page-header">
+      <app-toolbar></app-toolbar>
+    </header>
+    <main class="page-main">
+      <app-slider></app-slider>
+      <span></span>
+      <app-clients></app-clients>
+    </main>
+    <footer class="page-footer">
+      <!-- content here -->
+    </footer>
+  </div>
 </body>
 
 <router-outlet></router-outlet>

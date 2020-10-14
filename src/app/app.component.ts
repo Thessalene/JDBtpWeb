@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'JDBTPWeb';
-  imagePath = '../assets/logo_jdbtp_001.png';
+  
 
   
 }

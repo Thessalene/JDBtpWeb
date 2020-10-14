@@ -8,11 +8,17 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import { DescriptionComponent } from './description/description.component';
+import { SliderComponent } from './slider/slider.component';
+import { ClientsComponent } from './clients/clients.component';
+import { ToolbarComponent } from './toolbar/toolbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DescriptionComponent
+    DescriptionComponent,
+    SliderComponent,
+    ClientsComponent,
+    ToolbarComponent
   ],
   imports: [
     BrowserModule,

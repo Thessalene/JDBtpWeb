@@ -1,0 +1,176 @@
+
+
+.banner1, .banner2, .banner3, .banner4{
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    top: 0;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    opacity: 0.9;
+}
+
+.text-box {
+    width: 600px;
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    color: red;
+}
+
+.text-box h1{
+    margin-bottom: 40px;
+}
+
+.text-box p{
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 80px;
+}
+
+.text-box span {
+    background: red;
+    height: 1px;
+    width: 100px;
+    position: absolute;
+    left: 0px;
+}
+
+.banner1 {
+  animation: slide1 30s linear infinite;
+}
+
+.banner2 {
+  animation: slide2 30s linear infinite;
+}
+
+.banner3 {
+  animation: slide3 30s linear infinite;
+}
+
+.banner4 {
+  animation: slide4 30s linear infinite;
+}
+
+@keyframes slide1{
+  0% {
+    visibility: visible;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+
+@keyframes slide2{
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50%{
+    visibility: visible;
+  }
+  75%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes slide3{
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  }
+}
+
+@keyframes slide4{
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: hidden;
+  }
+  100%{
+    visibility: visible;
+  }
+}
+
+/** Zoom Out effect */
+@keyframes zoom-out{
+  100%{
+    opacity: 0;
+  }
+}
+
+
+/* TYPING EFFECTS */
+h3 {
+    animation: type 3s steps(22);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    width: 26ch;
+  }
+  
+  p {
+    animation: type2 4s;
+  }
+  
+  @keyframes type{
+    0%{
+      width: 0ch;
+    }
+  
+    100%{
+      width: 26ch;
+    }
+  }
+  
+  @keyframes type2{
+    0%{
+      margin-left: -20%;
+    }
+  
+    100%{
+      margin-left: 0%;
+    }
+  }
