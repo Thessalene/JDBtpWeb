@@ -1,4 +1,4 @@
-<title>Home Page JD BTP</title>
+<title>Accueil JD BTP</title>
 
 <body>
    
@@ -7,24 +7,8 @@
     <header class="page-header">
       <app-toolbar></app-toolbar>
     </header>
-    <main class="page-main">
-      <app-slider></app-slider>
-      <span></span>
-      <div class="prestation-row">
-        <app-prestation [image]="image1" [title]="title1" [description]="description1"></app-prestation>
-        <app-prestation [image]="image2" [title]="title2" [description]="description2"></app-prestation>
-        <app-prestation [image]="image3" [title]="title3" [description]="description3"></app-prestation>
-        <app-prestation [image]="image4" [title]="title4" [description]="description4"></app-prestation>
-
-
-      </div>
-      
-      <app-clients></app-clients>
-    </main>
-    <footer class="page-footer">
-      <app-footer></app-footer>
-    </footer>
-  </div>
+    <router-outlet></router-outlet>
+    </div>
 </body>
 
-<router-outlet></router-outlet>
+
