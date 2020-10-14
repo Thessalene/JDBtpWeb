@@ -1,11 +1,12 @@
 
   mat-toolbar {
-    height: 90px;
+    height: 80px;
     position: fixed;
     z-index: 100;
     margin: 0;
     width: 100%  !important;
     background-color: white;
+    opacity: 0.9;
   }
 
   .logo{
@@ -17,9 +18,31 @@
     flex: 1 1 auto;
   }
 
-
   button {
     color: orange;
     font-weight: bold;
+  }
+
+  .menu-item{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+  }
+
+  .menu-item:hover{
+    color: orange;
+    font-weight: bold;
+
+  }
+
+  .menu-item p{
+    margin-bottom: 10px;
+  }
+
+  .menu-item span{
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    background-color: orange;
   }
 
