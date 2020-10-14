@@ -48,3 +48,10 @@
     font-family: 'Open Sans', sans-serif;
     overflow: hidden;
   }
+
+  /* Prestation row */
+  .prestation-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }

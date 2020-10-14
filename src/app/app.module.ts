@@ -11,6 +11,7 @@ import { DescriptionComponent } from './description/description.component';
 import { SliderComponent } from './slider/slider.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
+import { PrestationComponent } from './prestation/prestation.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
     DescriptionComponent,
     SliderComponent,
     ClientsComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    PrestationComponent
   ],
   imports: [
     BrowserModule,

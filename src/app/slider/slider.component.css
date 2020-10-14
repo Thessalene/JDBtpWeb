@@ -17,7 +17,6 @@ img {
     top: 50%;
     transform: translate(-50%, -50%);
     opacity: 1;
-    opacity: 0.9;
 }
 
 .text-box {
@@ -25,7 +24,10 @@ img {
     position: absolute;
     top: 200px;
     left: 100px;
-    color: red;
+    color: black;
+    background-color: white;
+    padding: 2%;
+    opacity: 0.8;
 }
 
 .text-box h1{
@@ -39,8 +41,8 @@ img {
 }
 
 .text-box span {
-    background: red;
-    height: 1px;
+    background: orange;
+    height: 3px;
     width: 100px;
     position: absolute;
     left: 0px;
@@ -76,7 +78,7 @@ img {
     visibility: hidden;
   }
   100%{
-    visibility: visible;
+    visibility: hidden;
   }
 }
 
