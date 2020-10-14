@@ -1,0 +1,47 @@
+.page-footer{
+    text-align: center;
+    margin: 10px;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slogan-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slogan-row p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.slogan-row span{
+    height: 5px;
+    width: 100px;
+    background-color: grey;
+}
+
+.coord-row{
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-evenly;
+}
+
+img{
+    height: 100px;
+    width: 150px;
+    margin: 0 auto;
+}
+
+a{
+    color: orange;
+}

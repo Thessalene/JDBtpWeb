@@ -9,6 +9,10 @@
     left: 0;
     top: 0;
 }
+button {
+  color: orange;
+  font-weight: bold;
+}
 
 img {
     width: 100%;

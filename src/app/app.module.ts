@@ -12,6 +12,7 @@ import { SliderComponent } from './slider/slider.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PrestationComponent } from './prestation/prestation.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { PrestationComponent } from './prestation/prestation.component';
     SliderComponent,
     ClientsComponent,
     ToolbarComponent,
-    PrestationComponent
+    PrestationComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

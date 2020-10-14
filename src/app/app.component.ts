@@ -24,7 +24,7 @@ export class AppComponent {
 
   image4 = "../../assets/icons/prestations/quality.png";
   title4 = "Qualité recherchée";
-  description4 ="La qualité ? On vous l'offre au travers de nos réalisations. L'expérience ? Notre point fort";
+  description4 ="La qualité ? On vous l'offre. L'expérience ? Notre point fort.";
 
   
 }
