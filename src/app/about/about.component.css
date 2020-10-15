@@ -25,7 +25,12 @@
 .banner-about a{
     color: orange;
     margin-top: 15%;
+    
 }
+
+.banner-about a:hover{
+    color: white;
+    }
 
   
 span{

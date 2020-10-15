@@ -2,13 +2,19 @@
 
 .banner1, .banner2, .banner3, .banner4{
     height: 100vh;
-    width: 100%;
-    position: absolute;
+    width: 100vw;
+    position: static;
     display: flex;
     flex-direction: row;
     left: 0;
     top: 0;
+    margin: 0;
+    overflow: none;
+    white-space: pre-wrap;
+    word-wrap: normal;
 }
+
+
 button {
   color: orange;
   font-weight: bold;
@@ -21,6 +27,7 @@ button:hover{
 
 img {
     width: 100%;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 50%;
