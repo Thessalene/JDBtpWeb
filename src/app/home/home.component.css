@@ -8,10 +8,6 @@
   header{
     margin: 0;
   }
-  
-  footer {
-    background-color: grey;
-  }
    
   .wrapper > * {
     padding: 10px;
@@ -22,7 +18,7 @@
     flex-grow: 1;
   }
   
-  .page-main span{
+  .span-hidden{
     height: 100vh;
     width: max-content;
     display: flex;
@@ -64,3 +60,15 @@
       margin-top: 50px;
     }
   
+
+    app-gallery{
+      height: 100vh;
+    }
+
+    .divider-section {
+      height: 3px;
+      justify-content: center;
+      width: 500px;
+      background-color: orange;
+      position: absolute;
+    }

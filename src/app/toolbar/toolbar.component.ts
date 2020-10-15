@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +8,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
   imagePath = '../assets/logo_jdbtp_001.png';
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  redirectToHome() {
+    this.router.navigate(['./home']);
+  }
+
+  redirectToAbout() {
+    this.router.navigate(['./about']);
+  }
+
+  redirectToPrestations() {
+    this.router.navigate(['./prestations']);
+  }
+
+  redirectToRealisations() {
+    this.router.navigate(['./realisations']);
+  }
+
+  redirectToContact() {
+    this.router.navigate(['./contact']);
   }
 
 }

@@ -37,6 +37,10 @@ img {
     animation: bounce 3s linear;
 }
 
+.prestation h3:hover{
+    color: orange;
+}
+
 
 @keyframes bounce{
     0%{

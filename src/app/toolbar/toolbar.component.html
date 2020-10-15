@@ -1,30 +1,31 @@
 <mat-toolbar color="primary">
-    <img class="logo" src={{imagePath}}>
+    <img class="logo" src={{imagePath}} (click)="redirectToHome()"/>
     <span class="example-spacer"></span>
 
     <div class="menu-item">
-      <p>Qui sommes nous ?</p>
+      <p (click)="redirectToAbout()">Qui sommes nous ?</p>
+      <span></span>
+    </div>
+
+    <span class="example-spacer"></span>
+
+
+    <div class="menu-item">
+      <p (click)="redirectToPrestations()">Nos prestations</p>
       <span></span>
     </div>
 
     <span class="example-spacer"></span>
 
     <div class="menu-item">
-      <p>Nos prestations</p>
+      <p (click)="redirectToRealisations()">Nos réalisations</p>
       <span></span>
     </div>
 
     <span class="example-spacer"></span>
 
     <div class="menu-item">
-      <p>Nos réalisations</p>
-      <span></span>
-    </div>
-
-    <span class="example-spacer"></span>
-
-    <div class="menu-item">
-      <p>Contacts</p>
+      <p (click)="redirectToContact()">Contacts</p>
       <span></span>
     </div>
 

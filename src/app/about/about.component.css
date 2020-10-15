@@ -1,0 +1,54 @@
+.container-about{
+    margin: 0;
+}
+
+.banner-about{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+    margin: 0%;
+    position: absolute;
+    background-color: grey;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 3px ridge orange;
+}
+
+.banner-about h1{
+    color: orange;
+    margin-top: 15%;
+}
+
+.banner-about a{
+    color: orange;
+    margin-top: 15%;
+}
+
+  
+span{
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    position: static;
+    background-color: orange;
+}
+
+.prez-enterprise img {
+    height: 30%;
+    width: 30%;
+}
+
+.prez-enterprise p {
+    max-width: 450px;
+    padding: 25px;
+}
+
+.prez-enterprise{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

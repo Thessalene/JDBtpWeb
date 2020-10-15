@@ -23,6 +23,12 @@
     font-weight: bold;
   }
 
+
+  button:hover{
+    background-color: orange;
+    color: white;
+  }
+
   .menu-item{
     display: flex;
     align-items: flex-end;
