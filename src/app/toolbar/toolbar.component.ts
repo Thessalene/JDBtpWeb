@@ -33,4 +33,8 @@ export class ToolbarComponent implements OnInit {
     this.router.navigate(['./contact']);
   }
 
+  redirectToDevis() {
+    this.router.navigate(['./devis']);
+  }
+
 }

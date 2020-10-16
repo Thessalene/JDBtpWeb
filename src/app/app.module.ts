@@ -20,6 +20,8 @@ import { Gallery2Component } from './gallery2/gallery2.component';
 import { QuoteSlideshowComponent } from './HomeElements/quote-slideshow/quote-slideshow.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { DevisComponent } from './devis/devis.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -36,14 +38,16 @@ import { ContactComponent } from './contact/contact.component';
     Gallery2Component,
     QuoteSlideshowComponent,
     PortfolioComponent,
-    ContactComponent
+    ContactComponent,
+    DevisComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
