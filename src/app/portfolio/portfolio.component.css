@@ -19,6 +19,7 @@
 
 .banner-portfolio h1{
     color: orange;
+    font-size: 25px;
 }
 
 .banner-portfolio a{
@@ -35,7 +36,7 @@
     float: left;
     width:  200px;
     height: 300px;
-    object-fit: contain;
+    object-fit: cover;
   }
 
   img:hover{
@@ -50,12 +51,6 @@
 
 * {
     box-sizing: border-box;
-  }
-  
-  body {
-    background-color: #f1f1f1;
-    padding: 20px;
-    font-family: Arial;
   }
   
   /* Center website */

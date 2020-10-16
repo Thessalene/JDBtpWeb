@@ -17,8 +17,9 @@ import { HomeComponent } from './home/home.component';
 import { Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { Gallery2Component } from './gallery2/gallery2.component';
-import { QuoteSlideshowComponent } from './quote-slideshow/quote-slideshow.component';
+import { QuoteSlideshowComponent } from './HomeElements/quote-slideshow/quote-slideshow.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     AboutComponent,
     Gallery2Component,
     QuoteSlideshowComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

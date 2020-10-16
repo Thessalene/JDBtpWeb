@@ -1,0 +1,31 @@
+
+<div class="container-contact">
+    <div class="banner-contact">
+        <h1> Contact </h1>
+        <p><a href="#home" routerLink="/home">Accueil</a> / Contact ?</p>
+    </div>
+</div>
+
+<h3>Demandez votre devis gratuit !</h3>
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">Nom</label>
+    <input type="text" id="name" name="name" placeholder="Votre nom..">
+
+    <label for="lname">Email</label>
+    <input type="text" id="mail" name="mail" placeholder="Votre mail..">
+
+    <label for="works">Type de travaux</label>
+    <select id="works" name="works">
+      <option value="construction">Construction</option>
+      <option value="renovation">Rénovation</option>
+      <option value="other">Autres</option>
+    </select>
+
+    <label for="subject">Description des travaux</label>
+    <textarea id="subject" name="subject" placeholder="Décrivez votre projet..." style="height:200px"></textarea>
+
+    <input type="submit" value="Envoyer">
+  </form>
+</div>
