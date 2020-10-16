@@ -18,6 +18,7 @@ import { Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { Gallery2Component } from './gallery2/gallery2.component';
 import { QuoteSlideshowComponent } from './quote-slideshow/quote-slideshow.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { QuoteSlideshowComponent } from './quote-slideshow/quote-slideshow.compo
     HomeComponent,
     AboutComponent,
     Gallery2Component,
-    QuoteSlideshowComponent
+    QuoteSlideshowComponent,
+    PortfolioComponent
   ],
   imports: [
     BrowserModule,

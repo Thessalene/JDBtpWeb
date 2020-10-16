@@ -12,6 +12,17 @@
     overflow: none;
     white-space: pre-wrap;
     word-wrap: normal;
+    z-index: -1;
+}
+
+.contact-banner{
+  position: absolute;
+  display: flex;
+  justify-content: right;
+  z-index: 1;
+  align-items: flex-end;
+  background-color: orange;
+  color: orange;
 }
 
 
