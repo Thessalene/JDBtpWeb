@@ -16,12 +16,14 @@
   }
   
   img {
-      max-width: 50%;
+      max-width: 120px;
+      max-height: 150px;
+      padding: 15px;
   }
 
-  .example-card:hover {
+  .example-card:hover > img {
     transform: scale(1.1);
-    border: 2px solid rgba(255, 115, 0, 0.849);
+    border-bottom: 2px solid rgba(255, 115, 0, 0.849);
   }
 
   .container-contact{

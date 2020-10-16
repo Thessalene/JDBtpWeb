@@ -1,5 +1,7 @@
 .container-about{
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .banner-about{
@@ -33,9 +35,9 @@
 
   
 .prez-enterprise img {
-    height: 30%;
-    width: 30%;
-    flex-grow: 1;
+    height: 200px;
+    width: 210px;
+    margin: 2%;
 }
 
 .prez-enterprise p {
@@ -48,4 +50,42 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.divider-section {
+    height: 3px;
+    width: 250px;
+    background-color: orange;
+    position: absolute;
+  }
+
+.about-row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 30px;
+    padding: 2%;
+}
+
+.about-row img{
+    width: 20%;
+}
+
+
+.slogan-row{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.slogan-row p{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.slogan-row span{
+    height: 5px;
+    width: 100px;
+    background-color: orange;
 }
