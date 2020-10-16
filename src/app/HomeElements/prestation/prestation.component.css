@@ -33,22 +33,28 @@ img {
     opacity: 0.5;
 }
 
-.container-image:hover{
-    animation: bounce 3s linear;
+.img:hover{
+    animation: bounce2 0.7s ease infinite;
 }
 
 .prestation h3:hover{
     color: orange;
 }
 
+@keyframes bounce2{
+    from {top: 106px;}
+    50%  {top: 86px;}
+    to   {top: 106px;}
+}
 
 @keyframes bounce{
     0%{
-        background-color: orangered;
         width: 0%;
+        padding-top: 15px;
+        
     }
   100%{
-      background-color: orange;
       width: 100%;
+      padding-top: 0px;
   }
 }
