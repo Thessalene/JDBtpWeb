@@ -23,6 +23,8 @@ import { ContactComponent } from './contact/contact.component';
 import { DevisComponent } from './devis/devis.component';
 import {MatCardModule} from '@angular/material/card';
 import { PrestationPageComponent } from './prestation-page/prestation-page.component';
+import { GridComponent } from './grid/grid.component';
+import { RealisationsComponent } from './realisations/realisations.component';
 
 
 @NgModule({
@@ -41,7 +43,9 @@ import { PrestationPageComponent } from './prestation-page/prestation-page.compo
     PortfolioComponent,
     ContactComponent,
     DevisComponent,
-    PrestationPageComponent
+    PrestationPageComponent,
+    GridComponent,
+    RealisationsComponent
   ],
   imports: [
     BrowserModule,

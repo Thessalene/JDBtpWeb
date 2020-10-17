@@ -1,5 +1,5 @@
 
-  mat-toolbar {
+  .toolbar {
     height: 80px;
     position: fixed;
     z-index: 100;
@@ -7,6 +7,9 @@
     width: 100%  !important;
     background-color: white;
     opacity: 0.9;
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
   }
 
   .mat-toolbar-row, .mat-toolbar-single-row {
@@ -60,3 +63,32 @@
     background-color: orange;
   }
 
+  button {
+    height: 50%;
+
+  }
+
+  /* Responsive toolbar */
+
+
+@media screen and (max-width: 600px) {
+  .toolbar p:not(:first-child) {display: none;}
+  .toolbar p {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .toolbar.responsive {position: relative;}
+  .toolbar.responsive .p {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .toolbar.responsive p {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}

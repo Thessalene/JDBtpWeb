@@ -1,0 +1,51 @@
+
+<div class="container-portfolio">
+
+    <div class="banner-portfolio">
+        <h1> Portfolio </h1>
+        <p><a href="#home" routerLink="/home">Accueil</a> / Portfolio ?</p>
+    </div>
+
+</div>
+<div id="myBtnContainer">
+  <button class="btn active" (click)="filterSelection('all')"> Tous</button>
+  <button class="btn" (click)="filterSelection('renovation')"> Rénovation</button>
+  <button class="btn" (click)="filterSelection('construction')"> Construction</button>
+  <button class="btn" (click)="filterSelection('other')"> Autres</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="portfolio-grids">
+<h3>Villa F3 - 120 m2 - Le Robert </h3>
+<p> Terrassement d’une villa F3, 2 chambres, séjour, salle de bain, cuisine, buanderie. </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_001"></app-grid>
+
+<h3>Fond de forme Dalle - Schoelcher </h3>
+<p> Fond de forme Dalle avec mise en place d'un film anti-thermite</p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_002"></app-grid>
+
+<h3>Pose de fosse septique- Le Robert </h3>
+<p> </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_003"></app-grid>
+
+<h3>Préparation coffrage long grine - Fort-de-France</h3>
+<p> </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_004"></app-grid>
+
+<h3>Préparation fond de forme (route) - Fort-de-France</h3>
+<p> </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_005"></app-grid>
+
+<h3>Raccordement fosse septique - Robert</h3>
+<p> </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_006"></app-grid>
+
+<h3>Rénovation sous-dalle d'une villa - Fort-de-France</h3>
+<p> </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_007"></app-grid>
+
+<h3>Réseau électrique - Redoute</h3>
+<p> Téléphone avec regard de visite </p>
+<app-grid [workType]="renovation" [photoPaths]="photoPaths_008"></app-grid>
+
+</div>

@@ -1,0 +1,74 @@
+.container-portfolio{
+    margin: 0;
+}
+
+.banner-portfolio{
+    display: flex;
+    flex-direction: column;
+    background: url("https://images.unsplash.com/photo-1582547766135-5940c6d3b50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80");
+    justify-content: flex-end; 
+    text-align: center;
+    border-bottom: 3px ridge orange;
+    
+    height: 26vh;
+}
+
+.banner-portfolio h1{
+    color: orange;
+    font-size: 25px;
+}
+
+.banner-portfolio a{
+    color: orange;
+    margin-top: 15%;
+    
+}
+
+.banner-portfolio a:hover{
+    color: grey;
+}
+
+
+  img:hover{
+    opacity: 0.4;
+    cursor: zoom-in;
+  }
+
+  img:active {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add a dark background color to the active button */
+  .btn.active {
+    background-color: #666;
+     color: white;
+  }
+
+    

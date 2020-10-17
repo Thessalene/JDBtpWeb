@@ -38,14 +38,23 @@ mat-card img{
 }
 
 mat-card p{
-    font-size: large;
+    font-size: medium;
 }
   
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 1em;
+    }
   }
+
   .grid-item {
     padding: 20px;
     text-align: center;

@@ -6,6 +6,8 @@ import {
   BrowserDynamicTestingModule,
   platformBrowserDynamicTesting
 } from '@angular/platform-browser-dynamic/testing';
+import { AppComponent } from './app/app.component';
+import { GridComponent } from './app/grid/grid.component';
 
 declare const require: {
   context(path: string, deep?: boolean, filter?: RegExp): {
@@ -23,3 +25,4 @@ getTestBed().initTestEnvironment(
 const context = require.context('./', true, /\.spec\.ts$/);
 // And load the modules.
 context.keys().map(context);
+
