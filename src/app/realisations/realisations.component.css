@@ -49,6 +49,12 @@
   /* The "show" class is added to the filtered elements */
   .show {
     display: block;
+    visibility: visible;
+  }
+
+  .hide {
+    display: none !important;
+    visibility: hidden;
   }
   
   /* Style the buttons */
@@ -71,4 +77,14 @@
      color: white;
   }
 
+  .description-banner {
+    background-color: rgb(182, 180, 180);
+    color: black;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 6px solid grey;
+    border-top: 6px solid grey;
+  }
     
