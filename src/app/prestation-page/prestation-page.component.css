@@ -50,9 +50,15 @@ mat-card p{
 @media only screen and (max-width: 768px) {
     .grid-container {
       display: grid;
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr 1fr;
       padding: 1em;
     }
+
+    mat-card img{
+        width: 40%;
+    }
+
+
   }
 
   .grid-item {

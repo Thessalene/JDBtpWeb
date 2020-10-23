@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import emailjs from 'emailjs-com';
 
 @Component({
   selector: 'app-devis',
@@ -7,9 +8,28 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevisComponent implements OnInit {
 
+templateParams = {
+  from_name: "james",//Client name
+  message: "Mon devis est le suivant HEHE", //message
+  from_mail: "thessalene.jeanlouis@reseau.eseo.fr",//Client who ask the devis email
+  from_phone: "06 12 34 56 78",
+};
+
   constructor() { }
 
+
+
+
   ngOnInit(): void {
+    emailjs.init("user_h3uqvSYKuvN8cpxhUqPUM");
+    console.log("envoi de mail");
+
+    emailjs.send("contact_service","template_001",this.templateParams, 'user_h3uqvSYKuvN8cpxhUqPUM').then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+     }, (err) => {
+        console.log('FAILED...', err);
+     });
+
   }
 
 }
