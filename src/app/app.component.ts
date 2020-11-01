@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { IpServiceService } from './services/ip-service.service';  
 
 
 @Component({
@@ -27,18 +26,5 @@ export class AppComponent {
   image4 = "../../assets/icons/prestations/quality.png";
   title4 = "Qualité recherchée";
   description4 ="La qualité ? On vous l'offre. L'expérience ? Notre point fort.";
-
-  constructor(private ip:IpServiceService){}  
-  ipAddress:string;  
-ngOnInit()  
-  {  
-    this.getIP();  
-  }  
-  getIP()  
-  {  
-    this.ip.getIPAddress().subscribe((res:any)=>{  
-      this.ipAddress=res.ip;  
-    });  
-  }  
   
 }

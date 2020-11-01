@@ -14,14 +14,13 @@ import { PrestationComponent } from './HomeElements/prestation/prestation.compon
 import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './HomeElements/gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
-import { Routes } from '@angular/router';
 import { AboutComponent } from './about/about.component';
 import { Gallery2Component } from './gallery2/gallery2.component';
 import { QuoteSlideshowComponent } from './HomeElements/quote-slideshow/quote-slideshow.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { DevisComponent } from './devis/devis.component';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { PrestationPageComponent } from './prestation-page/prestation-page.component';
 import { GridComponent } from './grid/grid.component';
 import { RealisationsComponent } from './realisations/realisations.component';
