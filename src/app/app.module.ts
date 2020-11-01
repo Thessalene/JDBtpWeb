@@ -25,6 +25,11 @@ import {MatCardModule} from '@angular/material/card';
 import { PrestationPageComponent } from './prestation-page/prestation-page.component';
 import { GridComponent } from './grid/grid.component';
 import { RealisationsComponent } from './realisations/realisations.component';
+import { NgxDropzoneModule } from 'ngx-dropzone';
+import { HttpClientModule } from "@angular/common/http";  
+import { SlideComponent } from './slide/slide.component';
+import { NgImageSliderModule } from 'ng-image-slider';
+
 
 
 @NgModule({
@@ -45,7 +50,8 @@ import { RealisationsComponent } from './realisations/realisations.component';
     DevisComponent,
     PrestationPageComponent,
     GridComponent,
-    RealisationsComponent
+    RealisationsComponent,
+    SlideComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +59,11 @@ import { RealisationsComponent } from './realisations/realisations.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    NgxDropzoneModule,
+    HttpClientModule,
+    NgImageSliderModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

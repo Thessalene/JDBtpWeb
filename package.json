@@ -25,9 +25,14 @@
     "emailjs": "^3.3.0",
     "emailjs-com": "^2.6.3",
     "jquery": "^3.5.1",
+    "ng-image-slider": "^2.6.4",
+    "ngx-dropzone": "^2.2.2",
+    "ngx-slick-carousel": "^0.5.1",
     "popper": "^1.0.1",
+    "popper.js": "^1.16.1",
     "rxjs": "~6.5.5",
-    "tslib": "^2.0.0",
+    "slick-carousel": "^1.8.1",
+    "tslib": "^2.0.3",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {

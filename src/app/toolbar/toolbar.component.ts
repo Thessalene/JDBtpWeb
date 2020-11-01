@@ -13,6 +13,15 @@ export class ToolbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  myFunction() {
+    var x = document.getElementById("myToolbar");
+    if (x.className === "toolbar") {
+      x.className += " responsive";
+    } else {
+      x.className = "toolbar";
+    }
+  }
+  
   redirectToHome() {
     this.router.navigate(['./home']);
   }

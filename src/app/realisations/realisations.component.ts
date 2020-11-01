@@ -11,18 +11,47 @@ export class RealisationsComponent implements OnInit {
   construction = "construction";
   other = "other";
 
-  photoPaths_001: string[] = [
-    "../../assets//chantiers/robert/F5_Robert_001-001.jpg",
-    "../../assets//chantiers/robert/F5_Robert_001-002.jpg",
+  title_001 = "Villa F3 - 120 m2 - Le Robert";
+  description_001 = "Terrassement d’une villa F3, 2 chambres, séjour, salle de bain, cuisine, buanderie.";
+  text_side_001 = "left";
+  photoPaths_001: Array<object> = [{
+    image: "../../assets//chantiers/robert/F5_Robert_001-001.jpg",
+    thumbImage: "../../assets//chantiers/robert/F5_Robert_001-001.jpg",
+    alt: '',
+    title: ''
+}, {
+  image: "../../assets//chantiers/robert/F5_Robert_001-002.jpg",
+  thumbImage: "../../assets//chantiers/robert/F5_Robert_001-002.jpg",
+  alt: '',
+  title: ''
+}];
 
-  ];
+  title_002 = "Fond de forme Dalle - Schoelcher";
+  description_002 = "Fond de forme Dalle avec mise en place d'un film anti-thermite";
+  text_side_002 = "right";
 
-  photoPaths_002: string[] = [
-    "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/001.jpg",
-    "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/002.jpg",
-    "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/003.jpg",
-    "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/004.jpg",
-  ];
+  photoPaths_002: Array<object> = [{
+    image: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/001.jpg",
+    thumbImage: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/001.jpg",
+    alt: 'Film anti-thermite',
+    title: 'Film anti-thermite'
+}, {
+  image: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/002.jpg",
+  thumbImage: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/002.jpg",
+  alt: 'Film anti-thermite',
+  title: 'Film anti-thermite'
+}, {
+  image: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/003.jpg",
+  thumbImage: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/003.jpg",
+  alt: 'Film anti-thermite',
+  title: 'Film anti-thermite'
+}, {
+  image: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/004.jpg",
+  thumbImage: "../../assets/chantiers/fond-de-forme-dalle-avec-mise-en-place-film-anti-thermite_SCHOELCHER/004.jpg",
+  alt: 'Film anti-thermite',
+  title: 'Film anti-thermite'
+}, 
+];
 
   photoPaths_003: string[] = [
     "../../assets/chantiers/pose-fosse-septique_Robert/001.jpg",

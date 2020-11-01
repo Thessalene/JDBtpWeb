@@ -35,8 +35,8 @@
 
   
 .prez-enterprise img {
-    height: 200px;
-    width: 210px;
+    height: auto;
+    width: 20%;
     margin: 2%;
 }
 
@@ -88,4 +88,30 @@
     height: 5px;
     width: 100px;
     background-color: orange;
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .prez-enterprise{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-row {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 30px;
+        padding: 2%;
+    }
+
+      
+.prez-enterprise img {
+    height: auto;
+    width: 70%;
+    margin: 2%;
+}
+
 }

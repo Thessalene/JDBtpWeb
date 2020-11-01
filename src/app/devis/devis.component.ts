@@ -17,18 +17,41 @@ templateParams = {
 
   constructor() { }
 
+  files: File[] = [];
+ 
+  onSelect(event) {
+    console.log(event);
+    this.files.push(...event.addedFiles);
 
+    console.log("FILES : " + 
+    this.files.forEach(element => {
+      console.log(element.name)
+    }));
+  }
+   
+  onRemove(event) {
+    console.log(event);
+    this.files.splice(this.files.indexOf(event), 1);
 
+    console.log("FILES : " + 
+    this.files.forEach(element => {
+      console.log(element.name)
+    }));
+  }
 
   ngOnInit(): void {
-    emailjs.init("user_h3uqvSYKuvN8cpxhUqPUM");
+    console.log("FILES : " + 
+    this.files.forEach(element => {
+      console.log(element.name)
+    }));
+   /* emailjs.init("user_h3uqvSYKuvN8cpxhUqPUM");
     console.log("envoi de mail");
 
     emailjs.send("contact_service","template_001",this.templateParams, 'user_h3uqvSYKuvN8cpxhUqPUM').then((response) => {
         console.log('SUCCESS!', response.status, response.text);
      }, (err) => {
         console.log('FAILED...', err);
-     });
+     }); */
 
   }
 

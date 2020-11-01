@@ -2,8 +2,8 @@
 <div class="container-portfolio">
 
     <div class="banner-portfolio">
-        <h1> Portfolio </h1>
-        <p><a href="#home" routerLink="/home">Accueil</a> / Portfolio ?</p>
+        <h1> Nos réalisations </h1>
+        <p><a href="#home" routerLink="/home">Accueil</a> / Nos réalisations</p>
     </div>
 
 </div>
@@ -14,8 +14,11 @@
   <button class="btn" (click)="filterSelection('other')"> Autres</button>
 </div>
 
+<app-slide [title]="title_001" [description]="description_001" [photoPaths]="photoPaths_001" [text_side]="text_side_001"></app-slide>
+<app-slide [title]="title_002" [description]="description_002" [photoPaths]="photoPaths_002" [text_side]="text_side_002"></app-slide>
+
 <!-- Portfolio Gallery Grid -->
-<div class="portfolio-grids">
+ <!--<div class="portfolio-grids">
 
   <div class="portfolio-item construction">
     <div class="description-banner">
@@ -81,4 +84,4 @@
 <app-grid [workType]="other" [photoPaths]="photoPaths_008"></app-grid>
 </div>
 
-</div>
+</div> -->

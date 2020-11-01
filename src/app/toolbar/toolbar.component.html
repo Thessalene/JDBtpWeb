@@ -1,4 +1,4 @@
-<div class="toolbar">
+<div class="toolbar" id="myToolbar">
     <img class="logo" src={{imagePath}} (click)="redirectToHome()"/>
     <span class="example-spacer"></span>
 
@@ -32,4 +32,8 @@
     <span class="example-spacer"></span>
     <button mat-raised-button (click)="redirectToDevis()">Demande de devis</button>
     <span class="example-spacer"></span>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>

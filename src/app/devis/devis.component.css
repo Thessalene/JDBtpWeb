@@ -2,6 +2,8 @@ h3 {
     text-align: center;
 }
 
+
+
 .banner-devis{
     display: flex;
     flex-direction: column;
@@ -31,6 +33,10 @@ h3 {
     color: grey;
 }
 
+h3 {
+  padding: 2%;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -57,7 +63,22 @@ input[type=text], select, textarea {
   /* When moving the mouse over the submit button, add a darker green color */
   input[type=submit]:hover {
     background-color: orange;
+    border-color: orange;
   }
+
+  .input:focus {
+    outline: none !important;
+    border:1px solid red;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+.input[type=submit]:active {
+  outline: none !important;
+  border:1px solid red;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+
   
   /* Add a background color and some padding around the form */
   .container {
