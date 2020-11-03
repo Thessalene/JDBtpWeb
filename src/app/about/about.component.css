@@ -2,6 +2,7 @@
     margin: 0;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 .banner-about{
@@ -41,7 +42,6 @@
 }
 
 .prez-enterprise p {
-    max-width: 450px;
     padding: 25px;
 }
 
@@ -90,13 +90,12 @@
     background-color: orange;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     
     .prez-enterprise{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin:0;
     }
 
     .about-row {
@@ -113,5 +112,29 @@
     width: 70%;
     margin: 2%;
 }
+
+}
+
+.about-body {
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .prez-enterprise p {
+        padding: 25px;
+        max-width: 450px;
+    }
+
+    .prez-enterprise img {
+        width: 40%;
+        height: auto;
+    }
+
+    .about-row img{
+        width: 30%;
+    }
 
 }
