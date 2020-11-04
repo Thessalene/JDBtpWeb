@@ -36,10 +36,6 @@
 mat-card img{
     width: 20%;
 }
-
-mat-card p{
-    font-size: medium;
-}
   
 .grid-container {
     display: grid;

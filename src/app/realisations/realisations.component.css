@@ -13,10 +13,6 @@
     height: 26vh;
 }
 
-.banner-portfolio h1{
-    color: orange;
-}
-
 .banner-portfolio a{
     color: orange;
     margin-top: 15%;
@@ -26,7 +22,6 @@
 .banner-portfolio a:hover{
     color: grey;
 }
-
 
   img:hover{
     opacity: 0.4;
