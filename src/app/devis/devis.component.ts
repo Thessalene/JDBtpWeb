@@ -8,6 +8,12 @@ import emailjs from 'emailjs-com';
 })
 export class DevisComponent implements OnInit {
 
+  fname : string;
+  fmail : string;
+  ftype : string;
+  fsubject : string;
+
+
 templateParams = {
   from_name: "james",//Client name
   message: "Mon devis est le suivant HEHE", //message
@@ -37,6 +43,16 @@ templateParams = {
     this.files.forEach(element => {
       console.log(element.name)
     }));
+  }
+
+  onSubmit() {
+    console.log("Name : " + this.fname);
+    console.log("fmail : " + this.fmail);
+    console.log("ftype : " + this.ftype);
+    console.log("fsubject : " + this.fsubject);
+    console.log("-------------------------------------");
+
+    document.getElementById("openModalButton").click();
   }
 
   ngOnInit(): void {

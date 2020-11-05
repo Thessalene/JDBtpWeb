@@ -28,6 +28,8 @@ import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HttpClientModule } from "@angular/common/http";  
 import { SlideComponent } from './slide/slide.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { FormsModule } from '@angular/forms';
+import { from } from 'rxjs';
 
 
 
@@ -61,7 +63,8 @@ import { NgImageSliderModule } from 'ng-image-slider';
     MatCardModule,
     NgxDropzoneModule,
     HttpClientModule,
-    NgImageSliderModule
+    NgImageSliderModule,
+    FormsModule
 
   ],
   providers: [],

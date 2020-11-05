@@ -7,17 +7,18 @@
 </div>
 
 <h3>Demandez votre devis gratuit !</h3>
+<p> Name : {{fname}}, Mail : {{fmail}}, type : {{ftype}}, subject : {{fsubject}} </p>
 
 <div class="container">
-  <form action="/action_page.php">
-    <label for="fname">Nom</label>
-    <input required minlength="3" type="text" id="name" name="name" placeholder="Votre nom..">
+  <form (submit)="onSubmit()">
+    <label>Nom</label>
+    <input [(ngModel)]="fname" required minlength="3" type="text" id="name" name="name" placeholder="Votre nom..">
 
     <label for="fmail">Email</label>
-    <input required type="text" id="mail" name="mail" placeholder="Votre mail..">
+    <input [(ngModel)]="fmail" required type="text" id="mail" name="mail" placeholder="Votre mail..">
 
     <label for="works">Type de travaux</label>
-    <select required id="works" name="works">
+    <select [(ngModel)]="ftype" required id="works" name="works">
       <option value="construction">Construction</option>
       <option value="renovation">Rénovation</option>
       <option value="other">Autres</option>
@@ -33,19 +34,13 @@
 </ngx-dropzone>
 
     <label for="subject">Description des travaux</label>
-    <textarea required id="subject" name="subject" placeholder="Décrivez votre projet..." style="height:200px"></textarea>
+    <textarea [(ngModel)]="fsubject" required id="subject" name="subject" placeholder="Décrivez votre projet..." style="height:200px"></textarea>
 
-    <input type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" value="Envoyer">
-
-    
+    <input type="submit" class="btn btn-primary" value="Envoyer">
+    <button id="openModalButton" [hidden]="true" data-toggle="modal" data-target="#exampleModal">Open Modal</button>
   </form>
 </div>
 
-<form enctype="multipart/form-data" method="post" onsubmit="formSubmit()">
-  <label>Attach file:</label>
-  <input type="file" name="my_file"> 
-  <input type="submit" value="Submit">
-</form>
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
