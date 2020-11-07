@@ -90,6 +90,10 @@
     background-color: orange;
 }
 
+mat-card{ 
+    border: none;
+    margin : 2%;
+}
 @media only screen and (max-width: 769px) {
     
     .prez-enterprise{

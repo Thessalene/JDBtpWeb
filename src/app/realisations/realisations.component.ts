@@ -250,7 +250,7 @@ export class RealisationsComponent implements OnInit {
   filterSelection(c) {
     console.log("filter selection : " + c)
     var x, i;
-    x = document.getElementsByClassName("portfolio-item");
+    x = document.getElementsByClassName("slide");
     console.log("filter selection x: " + x.toString())
     if (c == "all") c = "";
     for (i = 0; i < x.length; i++) {

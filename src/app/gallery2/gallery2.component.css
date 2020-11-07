@@ -20,7 +20,7 @@
   
   .column img {
     margin-top: 6px;
-    vertical-align: middle;
+    vertical-align: middle
     width: 100%;
     opacity: 0.3;
   }
@@ -35,15 +35,7 @@
     -webkit-transform:scale(1.5); /* or some other value */
     transform:scale(1.5);
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      -ms-flex: 50%;
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
+ 
   
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
   @media screen and (max-width: 600px) {
