@@ -4,9 +4,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
-import {MatToolbarModule} from '@angular/material/toolbar';
+import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatDividerModule } from '@angular/material/divider';
+import { MatButtonModule} from '@angular/material/button';
 import { SliderComponent } from './HomeElements/slider/slider.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
@@ -30,8 +32,11 @@ import { SlideComponent } from './slide/slide.component';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { FormsModule } from '@angular/forms';
 import { from } from 'rxjs';
-
-
+import { MaterialToolbarComponent } from './material-toolbar/material-toolbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -52,19 +57,28 @@ import { from } from 'rxjs';
     PrestationPageComponent,
     GridComponent,
     RealisationsComponent,
-    SlideComponent
+    SlideComponent,
+    MaterialToolbarComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
+    MatDividerModule,
     MatButtonModule,
     MatCardModule,
     NgxDropzoneModule,
     HttpClientModule,
     NgImageSliderModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatSidenavModule,
+    NgbModule,
+    FlexLayoutModule
 
   ],
   providers: [],

@@ -1,0 +1,31 @@
+<mat-toolbar class="myToolbar" fxLayout="row" color="primary" 
+fxLayoutAlign="space-between center" fxLayoutAlign.xs="end center">
+    <img fxFlex class="logo" src={{logoPath}} (click)="redirectToHome()"/>
+
+    <button mat-button [routerLink]="item.redirection" *ngFor="let item of menuItems" 
+        [fxShow]="item.showOnDesktop" 
+        [fxShow.xs]="item.showOnMobile"
+        [fxShow.sm]="item.showOnTablet">
+        <!-- <mat-icon class="mr">{{item.icon}}</mat-icon> -->
+        {{item.label}}
+    </button>
+    <ng-container>
+        <button mat-icon-button [matMenuTriggerFor]="dropMenu" [fxShow]=false [fxShow.sm]=true [fxShow.xs]=true >
+            <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #dropMenu="matMenu">
+            <ng-container *ngFor="let item of menuItems">
+                <div [fxShow]="!item.showOnDesktop" 
+                     [fxShow.sm]="!item.showOnTablet" 
+                     [fxShow.xs]="!item.showOnMobile">
+                    <button mat-menu-item [routerLink]="item.redirection">
+                        <mat-icon class="mr">{{item.icon}}</mat-icon>
+                        {{item.label}}
+                    </button>
+
+                    <mat-divider></mat-divider>
+                </div>
+            </ng-container>
+        </mat-menu>
+    </ng-container>
+</mat-toolbar>
