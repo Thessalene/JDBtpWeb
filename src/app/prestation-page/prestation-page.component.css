@@ -19,6 +19,12 @@
     height: 26vh;
 }
 
+@media screen and (max-width: 600px) {
+    .banner-prestation{
+        height: 16vh;
+      }
+  }
+
 .banner-prestation h1{
     color: orange;
 }

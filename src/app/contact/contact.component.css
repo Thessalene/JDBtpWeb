@@ -53,6 +53,12 @@
     height: 26vh;
 }
 
+@media screen and (max-width: 600px) {
+  .banner-contact{
+      height: 16vh;
+    }
+}
+
 .banner-contact h1{
     color: orange;
 }

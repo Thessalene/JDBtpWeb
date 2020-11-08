@@ -16,7 +16,7 @@ export class MaterialToolbarComponent implements OnInit {
   menuItems: MenuItem[] = [
     {
       label: 'Qui sommes nous ?',
-      icon: 'login',
+      icon: 'help',
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
@@ -24,7 +24,7 @@ export class MaterialToolbarComponent implements OnInit {
     },
     {
       label: 'Nos prestations',
-      icon: 'help',
+      icon: 'loyalty',
       showOnMobile: false,
       showOnTablet: false,
       showOnDesktop: true,
@@ -32,7 +32,7 @@ export class MaterialToolbarComponent implements OnInit {
     },
     {
       label: 'Nos réalisations',
-      icon: 'attach_money',
+      icon: 'perm_media',
       showOnMobile: false,
       showOnTablet: true,
       showOnDesktop: true,
@@ -40,7 +40,7 @@ export class MaterialToolbarComponent implements OnInit {
     },
     {
       label: 'Contact',
-      icon: 'notes',
+      icon: 'contact_support',
       showOnMobile: false,
       showOnTablet: true,
       showOnDesktop: true,
@@ -48,7 +48,7 @@ export class MaterialToolbarComponent implements OnInit {
     },
     {
       label: 'Demande de devis',
-      icon: 'slideshow',
+      icon: 'description',
       showOnMobile: false,
       showOnTablet: true,
       showOnDesktop: true,

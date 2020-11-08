@@ -2,8 +2,6 @@ h3 {
     text-align: center;
 }
 
-
-
 .banner-devis{
     display: flex;
     flex-direction: column;
@@ -17,6 +15,12 @@ h3 {
     border-bottom: 3px ridge orange;
     
     height: 26vh;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-devis{
+      height: 16vh;
+    }
 }
 
 .banner-devis h1{

@@ -60,7 +60,7 @@ templateParams = {
     this.files.forEach(element => {
       console.log(element.name)
     }));
-   /* emailjs.init("user_h3uqvSYKuvN8cpxhUqPUM");
+    /*emailjs.init("user_h3uqvSYKuvN8cpxhUqPUM");
     console.log("envoi de mail");
 
     emailjs.send("contact_service","template_001",this.templateParams, 'user_h3uqvSYKuvN8cpxhUqPUM').then((response) => {

@@ -37,6 +37,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { LegalMentionComponent } from './legal-mention/legal-mention.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     GridComponent,
     RealisationsComponent,
     SlideComponent,
-    MaterialToolbarComponent
+    MaterialToolbarComponent,
+    LegalMentionComponent
   ],
   imports: [
     BrowserModule,

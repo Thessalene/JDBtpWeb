@@ -20,6 +20,12 @@
     height: 26vh;
 }
 
+@media screen and (max-width: 600px) {
+    .banner-about{
+        height: 16vh;
+      }
+  }
+
 .banner-about h1{
     color: orange;
 }
