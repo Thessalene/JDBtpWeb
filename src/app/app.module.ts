@@ -38,6 +38,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LegalMentionComponent } from './legal-mention/legal-mention.component';
+import { Slider2Component } from './slider2/slider2.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { LegalMentionComponent } from './legal-mention/legal-mention.component';
     RealisationsComponent,
     SlideComponent,
     MaterialToolbarComponent,
-    LegalMentionComponent
+    LegalMentionComponent,
+    Slider2Component
   ],
   imports: [
     BrowserModule,

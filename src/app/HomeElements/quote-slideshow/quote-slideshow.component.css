@@ -1,5 +1,5 @@
 h1{
-  padding: 15px;
+  padding: 2%;
 }
 
 /* Slideshow container */
@@ -10,12 +10,13 @@ h1{
     margin-right: 5%;
     margin-bottom: 2%;
     border: 2px solid orange;
+    padding: 2%;
   }
   
   /* Slides */
   .mySlides {
     display: none;
-    padding: 20px;
+    padding: 5%;
     text-align: center;
   }
   

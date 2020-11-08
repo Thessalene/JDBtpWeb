@@ -1,44 +1,53 @@
 
+.test{
+  width: 100vw;
+  height: 75vh;
+}
 
 .banner1, .banner2, .banner3, .banner4{
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    height: 75%;
     position: static;
     display: flex;
     flex-direction: row;
     left: 0;
     top: 0;
     margin: 0;
-    overflow: none;
     white-space: pre-wrap;
     word-wrap: normal;
     z-index: -1;
 }
 
-.contact-banner{
-  position: absolute;
+.test {
   display: flex;
-  justify-content: right;
-  z-index: 1;
-  align-items: flex-end;
-  background-color: orange;
-  color: orange;
 }
 
 
-button {
-  color: orange;
-  font-weight: bold;
-}
+@media screen and (max-width: 600px) {
+  .banner1, .banner2, .banner3, .banner4{
+    width: 100%;
+    top: 5%;
+    }
 
-button:hover{
-  background-color: orange;
-  color: white;
+    .text-box{
+      left: 0;
+      margin: 1%;
+      top: 10%;
+    }
+
+
+    img {
+      height: 50%;
+      width: 100vw;
+      top: 30%;
+    }
 }
 
 img {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: auto;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -47,14 +56,16 @@ img {
 }
 
 .text-box {
-    width: 600px;
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    color: black;
-    background-color: white;
-    padding: 2%;
-    opacity: 0.8;
+  /* width: 600px; */
+  max-width: 100vw;
+  position: absolute;
+  top: 30%;
+  /* left: 100px; */
+  color: black;
+  background-color: white;
+  padding: 2%;
+  opacity: 0.9;
+  margin: 10%;
 }
 
 .text-box h1{
@@ -169,36 +180,3 @@ img {
   }
 }
 
-
-/* TYPING EFFECTS */
-h3 {
-    animation: type 3s steps(22);
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 4px solid black;
-    width: 26ch;
-  }
-  
-  p {
-    animation: type2 4s;
-  }
-  
-  @keyframes type{
-    0%{
-      width: 0ch;
-    }
-  
-    100%{
-      width: 26ch;
-    }
-  }
-  
-  @keyframes type2{
-    0%{
-      margin-left: -20%;
-    }
-  
-    100%{
-      margin-left: 0%;
-    }
-  }

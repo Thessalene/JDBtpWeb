@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
   description3="Une équipe pluridisciplinaire à votre écoute.";
 
   image4 = "../../assets/icons/prestations/quality.png";
-  title4 = "Qualité recherchée";
+  title4 = "Qualité";
   description4 ="La qualité ? On vous l'offre. L'expérience ? Notre point fort.";
 
   constructor() { }

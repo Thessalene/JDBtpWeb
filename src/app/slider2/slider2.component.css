@@ -1,0 +1,25 @@
+.carousel-item {
+  height: 100vh;
+  min-height: 350px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+button {
+  background-color: orange;
+  color: white;
+}
+
+.mat-button-focus-overlay {
+  background-color:red;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+  }
+
+  

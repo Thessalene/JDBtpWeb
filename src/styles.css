@@ -1,6 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+/* set the variables you wish to change
+/*$body-bg:    #000;
+$body-color: $orange;/* You can add global styles to this file, and also import other style files */
+
 @import "~bootstrap/dist/css/bootstrap.css";
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
  body {
     margin: 0px;
@@ -8,6 +10,10 @@
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+}
+
+header{
+  margin: 0;
 }
 
 body main {
@@ -38,7 +44,7 @@ body h1 {
   }
 
   p{
-    font-size : 1em;
+    font-size : 0.8em;
 
   }
 }
