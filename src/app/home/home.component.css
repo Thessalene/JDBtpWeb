@@ -1,9 +1,16 @@
 
-  
+
     /* Prestation row */
     .prestation-row{
       display: flex;
       flex-direction: row;
+    }
+
+    @media screen and (min-width: 600px) {
+      .fixed{
+        width: 25%;
+        padding: 2%;
+      }
     }
 
     @media screen and (max-width: 600px) {

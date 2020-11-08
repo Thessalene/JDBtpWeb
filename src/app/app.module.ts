@@ -9,7 +9,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule} from '@angular/material/button';
-import { SliderComponent } from './HomeElements/slider/slider.component';
 import { ClientsComponent } from './clients/clients.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PrestationComponent } from './HomeElements/prestation/prestation.component';
@@ -17,14 +16,13 @@ import { FooterComponent } from './footer/footer.component';
 import { GalleryComponent } from './HomeElements/gallery/gallery.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { Gallery2Component } from './gallery2/gallery2.component';
+import { GalleryHomeComponent } from './gallery-home/gallery-home.component';
 import { QuoteSlideshowComponent } from './HomeElements/quote-slideshow/quote-slideshow.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { DevisComponent } from './devis/devis.component';
 import { MatCardModule } from '@angular/material/card';
 import { PrestationPageComponent } from './prestation-page/prestation-page.component';
-import { GridComponent } from './grid/grid.component';
 import { RealisationsComponent } from './realisations/realisations.component';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { HttpClientModule } from "@angular/common/http";  
@@ -38,12 +36,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { LegalMentionComponent } from './legal-mention/legal-mention.component';
-import { Slider2Component } from './slider2/slider2.component';
+import { SliderHomeComponent } from './slider-home/slider-home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SliderComponent,
     ClientsComponent,
     ToolbarComponent,
     PrestationComponent,
@@ -51,18 +48,17 @@ import { Slider2Component } from './slider2/slider2.component';
     GalleryComponent,
     HomeComponent,
     AboutComponent,
-    Gallery2Component,
+    GalleryHomeComponent,
     QuoteSlideshowComponent,
     PortfolioComponent,
     ContactComponent,
     DevisComponent,
     PrestationPageComponent,
-    GridComponent,
     RealisationsComponent,
     SlideComponent,
     MaterialToolbarComponent,
     LegalMentionComponent,
-    Slider2Component
+    SliderHomeComponent
   ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
 
   image2 = "../../assets/icons/prestations/maintenance.png";
   title2 = "Rénovations";
-  description2="Pourquoi construire quand on peut rénover, améliorer, agrandir ?";
+  description2="Pourquoi construire quand on peut rénover, améliorer ?";
 
   image3 = "../../assets/icons/prestations/worker.png";
   title3 = "Expertise";

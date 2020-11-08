@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Slider2Component } from './slider2.component';
+import { GalleryHomeComponent } from './gallery-home.component';
 
-describe('Slider2Component', () => {
-  let component: Slider2Component;
-  let fixture: ComponentFixture<Slider2Component>;
+describe('Gallery2Component', () => {
+  let component: GalleryHomeComponent;
+  let fixture: ComponentFixture<GalleryHomeComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Slider2Component ]
+      declarations: [ GalleryHomeComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Slider2Component);
+    fixture = TestBed.createComponent(GalleryHomeComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

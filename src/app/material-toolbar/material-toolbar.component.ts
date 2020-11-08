@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { from } from 'rxjs';
-import {MenuItem} from '../interface/menu-item';
+import {MenuItem} from '../interfaces/menu-item';
 import { Router } from '@angular/router';
 
 @Component({
