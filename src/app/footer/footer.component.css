@@ -6,6 +6,10 @@
     background-color: rgb(163, 162, 162);
 }
 
+.footer-copyright{
+    margin: O;
+}
+
 .footer-column{
     display: flex;
     flex-direction: column;
@@ -33,7 +37,7 @@
 .coord-row{
     display: flex;
     flex: 1 1 auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 img{
@@ -44,10 +48,6 @@ img{
 
 a{
     color: orange;
-}
-
-.icon-citation{
-    margin-bottom: 5px;
 }
 
 

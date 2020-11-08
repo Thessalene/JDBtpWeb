@@ -13,6 +13,38 @@ $body-color: $orange;/* You can add global styles to this file, and also import 
     font-size: 100%;
 }
 
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:2px !important;
+    -webkit-appearance:none;
+    -webkit-box-shadow: orange !important;
+    box-shadow: 2px 2px orange;
+  }
+
+  /* make it red instead (with with same width and style) */
+select:active, select:hover {
+  outline-color: orange;
+}
+
+  select:focus, select:active, select:hover{
+    outline-color: orange;
+    -webkit-appearance:none;
+    -webkit-box-shadow: orange !important;
+    box-shadow: 2px 2px orange;
+  }
+
+
 header{
   margin: 0;
 }
@@ -44,7 +76,7 @@ body h1 {
       font-size: 1.2em;
   }
 
-  p{
+  p, button{
     font-size : 0.8em;
 
   }
@@ -59,7 +91,7 @@ body h1 {
   body h2 {
     font-size: 1.2em;
 }
-  p{
+  p, button{
     font-size : 0.7em
 
   }
